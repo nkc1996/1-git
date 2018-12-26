@@ -28,4 +28,39 @@ $font-size: 37.5px !default;
     flex: 1;
     background: #ffc;
     display: flex;
+
+    .left {
+        flex: 2;
+    }
+
+    .right {
+        flex: 8;
+        height: 100%;
+        background: #fff;
+        overflow: hidden;
+        .content {
+            width: 100%;
+            height: 150%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            background: #fff;
+            dl {
+                width: 33%;
+                padding: rem(5px);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                dt{
+                    width: 100%;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+          
+        }
+    }
 }
